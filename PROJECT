@@ -13,7 +13,7 @@ resources:
     namespaced: true
   controller: true
   domain: acp.ag.ch
-  group: approval
+  group: 
   kind: Approval
   path: acp.ag.ch/approval-k8s-controller/api/v1
   version: v1
