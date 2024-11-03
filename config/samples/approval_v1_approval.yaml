@@ -1,0 +1,13 @@
+apiVersion: approval.acp.ag.ch/v1
+kind: Approval
+metadata:
+  name: second-approval
+spec:
+  roles:
+    - admin
+  resourceSpec:
+    apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: test-cm
+

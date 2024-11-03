@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- approval_v1_approval.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

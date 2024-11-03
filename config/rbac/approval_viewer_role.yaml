@@ -1,0 +1,23 @@
+# permissions for end users to view approvals.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: approval-k8s-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: approval-viewer-role
+rules:
+- apiGroups:
+  - approval.acp.ag.ch
+  resources:
+  - approvals
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - approval.acp.ag.ch
+  resources:
+  - approvals/status
+  verbs:
+  - get
